@@ -100,9 +100,9 @@ p <- ggplot(income_groups, aes(fill = income, x = survey, y = percent))+
         text = element_text(face = "bold", family = "Cairo"),
         plot.title = element_text(hjust = .5, size = 20, face = "bold"),
         legend.title = element_blank(),
-        plot.caption = element_text(hjust = -5.95, size = 8, face = "italic"))+
-  labs(caption = "Source: 2007 and 2014 from Pew Research Center. 2019-21 from Nationscape.",
-       title = "Latter-Day Saint 100k+ Group is Growing") + 
+        plot.caption = element_text(hjust = 1.5, size = 8, face = "italic"))+
+  labs(caption = "Source: Nationscape.",
+       title = "Latter-day Saints Not Proportionally Prosperous") + 
   guides(fill = guide_legend(reverse = TRUE))
 
 png("plots/LDS_myth_1.png",width = 2000, height = 1000, units = "px", res = 72*4)
