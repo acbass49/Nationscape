@@ -100,8 +100,8 @@ p <- ggplot(income_groups, aes(fill = income, x = survey, y = percent))+
         text = element_text(face = "bold", family = "Cairo"),
         plot.title = element_text(hjust = .5, size = 20, face = "bold"),
         legend.title = element_blank(),
-        plot.caption = element_text(hjust = 1.5, size = 8, face = "italic"))+
-  labs(caption = "Source: Nationscape.",
+        plot.caption = element_text(hjust = 1.7, size = 8, face = "italic"))+
+  labs(caption = "Source: Nationscape (2019-21)",
        title = "Latter-day Saints Not Proportionally Prosperous") + 
   guides(fill = guide_legend(reverse = TRUE))
 
